@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskstyle.css">
+    <script src="taskindex.js"></script>
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div class="container">
+        <p class="h1 text-center">TO-DO LIST</p>
+
+        <table>
+            <form>
+                <tr>
+                    <td><label>Name : </label></td>
+                    <td><input type="text" title="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Age : </label></td>
+                    <td><input type="number" min="1" max="100" title="age" id="age" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender : </label></td>
+                    <td>
+                        <input type="radio" value="Male" title="male" name="gender">
+                        <label>Male</label><br>
+                        <input type="radio" value="Female" title="female" name="gender">
+                        <label>Female</label><br>
+                        <input type="radio" value="Other" title="other" name="gender">
+                        <label>Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Course</label></td>
+                    <td>
+                        <select title="Course" size="1" id="course">
+                            <option value="Html">HTML Course</option>
+                            <option value="css">CSS Course</option>
+                            <option value="Javascript" selected>Javascript course</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>E-mail</label></td>
+                    <td><input type="email" title="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-btn"><input type="button" id="btn" value="Submit"onclick="update()"></td>
+                </tr>             
+            </form>
+        </table>
+        
+<!--dispaly content-->
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>E-mail</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body></html>
+
+    
